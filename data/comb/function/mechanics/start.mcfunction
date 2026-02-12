@@ -1,4 +1,3 @@
-
 function comb:mechanics/restart
 #scoreboard players operation *max turn = *example turn
 scoreboard players set *max turn 1
@@ -12,16 +11,25 @@ scoreboard players set *score turn 0
 #scoreboard players set *animation turn 1
 function comb:mechanics/spawn
 schedule function comb:mechanics/animation 2s append
-bossbar set progress players @a
-bossbar set progress visible true
-item replace entity @a container.8 with barrier{display:{Name:'[{"text":"Выйти","italic":false,"color":"dark_red","bold":true}]',Lore:['[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}]']},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:1,it:1}
-item replace entity @a container.4 with book{display:{Name:'[{"text":"Рестарт","italic":false,"color":"gold","bold":true}]',Lore:['[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}]']},Enchantments:[{id:"minecraft:infinity",lvl:1}],HideFlags:1,it:2}
-bossbar set progress color yellow
+bossbar set minecraft:progress players @a
+bossbar set minecraft:progress visible true
+
+# --- ОБНОВЛЕННЫЕ КОМАНДЫ ВЫДАЧИ ПРЕДМЕТОВ (1.21.1) ---
+
+# Барьер (Выйти) - custom_data:{it:1}
+item replace entity @a container.8 with barrier[custom_name='[{"text":"Выйти","italic":false,"color":"dark_red","bold":true}]',lore=['[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}]'],enchantment_glint_override=true,custom_data={it:1}]
+
+# Книга (Рестарт) - custom_data:{it:2}
+item replace entity @a container.4 with book[custom_name='[{"text":"Рестарт","italic":false,"color":"gold","bold":true}]',lore=['[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}]'],enchantment_glint_override=true,custom_data={it:2}]
+
+# -----------------------------------------------------
+
+bossbar set minecraft:progress color yellow
 execute if score *level main matches ..5 run bossbar set minecraft:progress name [{"score":{"name": "*animation","objective": "turn"},"color": "yellow","bold": true},{"text": " (","color": "gold"},{"score":{"name": "*level","objective": "main"},"color": "gold"},{"text": " Уровень)","color": "gold"}]
 execute if score *level main matches 6 run bossbar set minecraft:progress name [{"score":{"name": "*animation","objective": "turn"},"color": "yellow","bold": true},{"text": " (Бесконечный Режим)","color": "gold"}]
 execute if score *level main matches 7 run bossbar set minecraft:progress name [{"score":{"name": "*animation","objective": "turn"},"color": "yellow","bold": true},{"text": " (Разброс)","color": "gold"}]
 execute if score *level main matches 8 run bossbar set minecraft:progress name [{"score":{"name": "*animation","objective": "turn"},"color": "yellow","bold": true},{"text": " (Блиц)","color": "gold"}]
 execute if score *level main matches 9 run bossbar set minecraft:progress name [{"score":{"name": "*animation","objective": "turn"},"color": "yellow","bold": true},{"text": " (Двойной)","color": "gold"}]
 
-execute store result bossbar progress max run scoreboard players get *max turn
-execute store result bossbar progress value run scoreboard players get *animation turn
+execute store result bossbar minecraft:progress max run scoreboard players get *max turn
+execute store result bossbar minecraft:progress value run scoreboard players get *animation turn
