@@ -1,4 +1,11 @@
 function comb:mechanics/restart
+
+#
+tp @a 31 -59 11 180 0
+execute if score *level main matches 6.. run scoreboard players set *level main 1
+execute at @a run playsound entity.experience_orb.pickup master @a ~ ~ ~ 1
+#
+
 #scoreboard players operation *max turn = *example turn
 scoreboard players set *max turn 1
 execute if score *level main matches 1 run scoreboard players set *maximum turn 5
@@ -14,13 +21,13 @@ schedule function comb:mechanics/animation 2s append
 bossbar set minecraft:progress players @a
 bossbar set minecraft:progress visible true
 
-# --- ОБНОВЛЕННЫЕ КОМАНДЫ ВЫДАЧИ ПРЕДМЕТОВ (1.21.1) ---
+# --- ОБНОВЛЕННЫЕ КОМАНДЫ ВЫДАЧИ ПРЕДМЕТОВ (1.21.11) ---
 
 # Барьер (Выйти) - custom_data:{it:1}
-item replace entity @a container.8 with barrier[custom_name='[{"text":"Выйти","italic":false,"color":"dark_red","bold":true}]',lore=['[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}]'],enchantment_glint_override=true,custom_data={it:1}]
+item replace entity @a container.8 with barrier[item_name={"text":"Выйти","italic":false,"color":"dark_red","bold":true},lore=[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}],enchantment_glint_override=true,custom_data={it:1}]
 
 # Книга (Рестарт) - custom_data:{it:2}
-item replace entity @a container.4 with book[custom_name='[{"text":"Рестарт","italic":false,"color":"gold","bold":true}]',lore=['[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}]'],enchantment_glint_override=true,custom_data={it:2}]
+item replace entity @a container.4 with book[item_name={"text":"Рестарт","italic":false,"color":"gold","bold":true},lore=[{"text":"Для использования, нужно выбросить данный предмет.","italic":false}],enchantment_glint_override=true,custom_data={it:2}]
 
 # -----------------------------------------------------
 
