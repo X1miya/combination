@@ -1,3 +1,5 @@
 execute if score *mode main matches 0 run tellraw @a {"text":"Вы должны сперва пройти основной режим","bold":true,"color":"red"}
+execute if score *mode main matches 0 run execute at @a run playsound block.note_block.didgeridoo master @a ~ ~ ~ 1
 execute if score *mode main matches 1 run tp @a -36 -59 -52
+execute if score *mode main matches 1 run execute at @a run playsound entity.experience_orb.pickup master @a ~ ~ ~ 1
 execute if score *mode main matches 1 run item replace entity @a container.8 with barrier[item_name={"bold":true,"color":"dark_red","text":"Выйти"},lore=[[{"bold":false,"color":"white","italic":false,"text":"Для использования, нажмите"},{"bold":true,"color":"dark_green","text":" ПКМ"}]],enchantment_glint_override=true] 1
