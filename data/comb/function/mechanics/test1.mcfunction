@@ -7,5 +7,5 @@ execute as @e[tag=this.turn1,type=marker,tag=test] if score @s value = @e[tag=th
 execute as @e[tag=this.turn1,type=marker,tag=test] unless score @s value = @e[tag=this.button1,limit=1,type=marker] value unless score *buttontest main matches 1 run function comb:mechanics/mistake
 tag @e[tag=this.button1] remove this.button1
 tag @e[tag=this.turn1] remove this.turn1
-setblock ~ ~ ~ polished_blackstone_button[facing=south]
+#setblock ~ ~ ~ polished_blackstone_button[facing=south]
 scoreboard players set *buttontest main 0
