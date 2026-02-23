@@ -2,7 +2,6 @@ function comb:mechanics/restart
 
 #
 tp @a 31 -59 11 180 0
-execute if score *level main matches 6.. run scoreboard players set *level main 1
 execute at @a run playsound entity.experience_orb.pickup master @a ~ ~ ~ 1
 #
 
