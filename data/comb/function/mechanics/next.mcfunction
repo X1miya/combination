@@ -1,5 +1,5 @@
 scoreboard players add *level main 1
-function comb:mechanics/start
+execute if score *level main matches ..5 run function comb:mechanics/start
 execute if score *level main matches 6.. run scoreboard players set *mode main 1
 execute if score *level main matches 6.. run function comb:mechanics/restart
 execute if score *level main matches 6.. run tp @a 1 -59 -15
