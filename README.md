@@ -2,7 +2,10 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:00C853,100:00E676&height=180&section=header&text=Комбинация%20(Combination)&fontSize=40&fontColor=ffffff&fontAlignY=40" width="100%" alt="Header" />
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21%2B-00FF88?style=for-the-badge&logo=minecraft&logoColor=white)](https://www.minecraft.net/)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-00FF88?style=for-the-badge&logo=minecraft&logoColor=white)](https://www.minecraft.net/)
+[![Version](https://img.shields.io/badge/Map-v1.2.1_(EN_%2B_RU)-blue?style=for-the-badge)](https://github.com/X1miya/combination)
+[![CurseForge](https://img.shields.io/badge/CurseForge-Worlds-F16436?style=for-the-badge&logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/worlds/combination)
+[![Minecraft Inside](https://img.shields.io/badge/Minecraft_Inside-RU-brightgreen?style=for-the-badge)](https://minecraft-inside.ru/maps/168088-kombinaciya.html)
 [![Genre](https://img.shields.io/badge/Genre-Puzzle_Game-green?style=for-the-badge)](https://github.com/X1miya/combination)
 [![Advancements](https://img.shields.io/badge/Custom-Advancements-yellow?style=for-the-badge)](https://github.com/X1miya/combination)
 [![Studio](https://img.shields.io/badge/Studio-X1miyaStudio-064E3B?style=for-the-badge)](https://t.me/X1miyaStudio)
@@ -28,9 +31,13 @@
 
 ---
 
-### 🚀 Установка на карту
+### 🚀 Загрузка и установка на карту
 
-1. Скачайте репозиторий и поместите папку в датапаки мира:
+* **Готовые миры (Minecraft 1.21.11, EN + RU):**
+  * [CurseForge Worlds](https://www.curseforge.com/minecraft/worlds/combination)
+  * [Minecraft Inside (RU)](https://minecraft-inside.ru/maps/168088-kombinaciya.html)
+
+1. Скачайте готовую карту с CurseForge / Minecraft Inside **или** поместите папку датапака из репозитория в датапаки мира:
    ```text
    .minecraft/saves/<Ваш_Мир>/datapacks/combination/
    ```
