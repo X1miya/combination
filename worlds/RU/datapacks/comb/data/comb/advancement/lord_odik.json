@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+          "id": [1, 2, 3, 4],
+          "properties": [
+            {
+              "name": "textures",
+              "value": "ewogICJ0aW1lc3RhbXAiIDogMTc3MDkzMDg3NzQ1MSwKICAicHJvZmlsZUlkIiA6ICJkMTNmODljZmRiMmY0OTUxOWE4YjgxMTUzN2FmZWU2ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ2ZXhsZWhhaGEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGZkZDk4YTc3N2FkMDUzMjM2YTAxODc4NzIwNWIzNzQ4OTE2YjIxMzUxNjcyYzIyM2Y5YjVkMzE2OTY5OWNjMyIKICAgIH0KICB9Cn0="
+            }
+          ]
+        }
+      }
+    },
+    "title": {
+      "text": "lord_odik",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "Главный Билдер Карты",
+      "color": "yellow"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "comb:builders",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

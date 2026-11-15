@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:knowledge_book"
+    },
+    "title": {
+      "text": "Комбинация",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "V1.2",
+      "color": "yellow"
+    },
+    "background": "minecraft:block/gray_concrete",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

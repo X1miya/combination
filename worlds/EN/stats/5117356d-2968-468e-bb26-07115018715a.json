@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:lime_stained_glass": 13,
+      "minecraft:grass_block": 411,
+      "minecraft:redstone_block": 3,
+      "minecraft:mangrove_log": 4,
+      "minecraft:pale_oak_slab": 1,
+      "minecraft:stripped_pale_oak_log": 4,
+      "minecraft:pale_oak_trapdoor": 37,
+      "minecraft:pale_oak_planks": 1,
+      "minecraft:birch_planks": 55,
+      "minecraft:dark_oak_planks": 20,
+      "minecraft:pale_oak_stairs": 6,
+      "minecraft:pale_oak_log": 1,
+      "minecraft:green_stained_glass": 1,
+      "minecraft:bedrock": 27
+    },
+    "minecraft:dropped": {
+      "minecraft:barrier": 20,
+      "minecraft:book": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 156048,
+      "minecraft:walk_one_cm": 119120,
+      "minecraft:leave_game": 8,
+      "minecraft:play_time": 156048,
+      "minecraft:interact_with_beacon": 3,
+      "minecraft:jump": 211,
+      "minecraft:time_since_death": 156048,
+      "minecraft:drop": 22,
+      "minecraft:sprint_one_cm": 24479,
+      "minecraft:total_world_time": 178619,
+      "minecraft:fly_one_cm": 425011,
+      "minecraft:crouch_one_cm": 1102,
+      "minecraft:sneak_time": 2452
+    }
+  },
+  "DataVersion": 4671
+}
